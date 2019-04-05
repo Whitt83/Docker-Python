@@ -1,16 +1,12 @@
+''' Module exists only as an example to show that the debugger works.  Replace it with something interesting! '''
 
 
-class DebugTest:
-    def __init__(self):
-        pass
-
-    def hello_world(self):
-        print('Put a breakpoint on this line to test breakpoints!')
-        print('Hello World!')
+def hello_world():
+    ''' Simple method for testing the debugger '''
+    print('Put a breakpoint on this line to test breakpoints!')
+    print('Hello World!')
 
 
 if __name__ == "__main__":
-    test_class = DebugTest()
-    test_class.hello_world()
-
+    hello_world()
     print("Test Program Finished")

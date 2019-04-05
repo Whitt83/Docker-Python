@@ -12,11 +12,14 @@ This is a skeleton repo that I made for creating new python projects that run in
   * pip3 install ptvsd==4.2.5 --user
 5. (Optional) Install autopep8
   * pip3 install autopep8 --user
+6. (Optional) Install pylint
+  * pip3 install pylint --user
 
 
 # Forking & Customizing
  * Please fork it and use it.  Any errors, please submit back to me (or a pull request!)
  * Change the name of the project folder to match your project
+ * Change the container name -- Note, you will need to do a find & replace in tasks.json on the previous container name!!
  * Change the Dockerfile to some more intersting container, like tensorflow
  * Delete debug_test.py, and put some interesting project in this repo
 
@@ -25,6 +28,7 @@ This is a skeleton repo that I made for creating new python projects that run in
     This will take a few moments to run.
 2. Select a debug target from the dropdown in Visual Studio Code, and hit 'Debug'.
 3. Wait 5 - 7 seconds for it to time out.  Then click 'Debug Anyway' in the popup.
+  * If anybody knows how to get around this, please let me know.
 4. Success!
 
 # Adding a new debug target:
@@ -33,4 +37,4 @@ This is a skeleton repo that I made for creating new python projects that run in
 
 # Troubleshooting
   * The internet has observed that mismatching versions of PTVSD on your host environment & in the docker container can lead to problems.
-  * Make sure something else isn't using port 5678, the default port
+  * Make sure something else isn't using port 5678, the default port. Worst case, change the port.  You will need to update tasks.json and launch.json.

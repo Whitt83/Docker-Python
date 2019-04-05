@@ -9,12 +9,8 @@ This is a skeleton repo that I made for creating new python projects that run in
   * Docker
   * GitLens (Optional)
   * Python
-4. Install PTVSD
-  `pip3 install ptvsd==4.2.5 --user`
-5. (Optional) Install autopep8
-  `pip3 install autopep8 --user`
-6. (Optional) Install pylint
-  `pip3 install pylint --user`
+4. Install PTVSD:  `pip3 install ptvsd==4.2.5 --user`
+5. (Optional) Install autopep8:  `pip3 install autopep8 --user`
 
 
 ## Forking & Customizing
@@ -24,17 +20,19 @@ This is a skeleton repo that I made for creating new python projects that run in
  * Change the Dockerfile to some more intersting container, like tensorflow
  * Delete debug_test.py, and put some interesting project in this repo
 
+
 ## Debugging an existing target
 1. Compose your docker container (ctrl+shift+P, Docker Compose)
     This will take a few moments to run.
 2. Select a debug target from the dropdown in Visual Studio Code, and hit 'Debug'.
-3. Wait 5 - 7 seconds for it to time out.  Then click 'Debug Anyway' in the popup.
-  * If anybody knows how to get around this, please let me know.
+3. Wait 5 - 7 seconds for it to time out.  Then click 'Debug Anyway' in the popup. **If anybody knows how to get around this, please let me know.**
 4. Success!
+
 
 ## Adding a new debug target:
 1. Add an entry in tasks.json
 2. Add an entry in launch.json
+
 
 ## Troubleshooting
   * The internet has observed that mismatching versions of PTVSD on your host environment & in the docker container can lead to problems.
